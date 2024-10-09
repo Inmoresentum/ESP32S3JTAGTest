@@ -22,13 +22,15 @@ along with clion ide's advanced debugging features.
 5. To identify and install the missing dependencies:
     * Open the builtin terminal of clion and make sure that you are
       at the root of your pio project (*same level as your `platformio.ini` file*).
-    * Now the **run** following command
+    * Now **run** the following command:
       ```bash
         pio debug --interface=gdb -x .pioinit
       ```
-    * Now observe the output and see the missing dependency or dependencies
+    * After previous step, observe the output and see the missing dependency or dependencies
     * Install them on your system or provide symlink to appropriate directory
-    * Now, run the command again and now it should work on the terminal
-    * Okay, now exit out of the gdb and close the terminal
-    * Now you can do the Step 2 and things should work as usual
+    * Now, run the command again and it should work on the terminal
+    * If everything is Okay then exit out of the gdb and close the terminal
+    * Finally, you can do the Step 2 and things should work as usual
+
+That's all! Nice and Easy. 
 
