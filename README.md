@@ -1,8 +1,11 @@
 <h1 align="center">Procedure to use building jtag interface with pio and clion on Linux</h1>
 
-Here I assume that you have already setup pio and clion correctly and can flash firmware 
-and do all the other stuff utilizing platformio and clion on your Linux Distribution installation.
-Now, I am going to discuss how to
+Here I assume that you have already setup [pio](https://platformio.org/)
+and [clion](https://www.jetbrains.com/clion/) correctly and can flash firmware 
+and do all the other stuff utilizing platformio (*pio*) and clion on your Linux Distribution installation.
+Now, I am going to discuss how to use the
+ESP32 [JTAG interface](https://en.wikipedia.org/wiki/JTAG) (*usb*)
+along with clion ide's advanced debugging features.
 
 1. First, make sure that you have correctly configured
    `platformio.ini` file. For reference check the provided [platformio.ini](platformio.ini).
@@ -18,14 +21,14 @@ Now, I am going to discuss how to
    is trying to use.
 5. To identify and install the missing dependencies:
     * Open the builtin terminal of clion and make sure that you are
-      at the root of your pio project (*same level as your `platformio.ini`*).
+      at the root of your pio project (*same level as your `platformio.ini` file*).
     * Now the **run** following command
       ```bash
         pio debug --interface=gdb -x .pioinit
       ```
     * Now observe the output and see the missing dependency or dependencies
     * Install them on your system or provide symlink to appropriate directory
-    * Now, ran the command again and now it should work on the terminal
+    * Now, run the command again and now it should work on the terminal
     * Okay, now exit out of the gdb and close the terminal
     * Now you can do the Step 2 and things should work as usual
 
