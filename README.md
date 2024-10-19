@@ -2,10 +2,11 @@
 
 Here I assume that you have already setup [pio](https://platformio.org/)
 and [clion](https://www.jetbrains.com/clion/) correctly and can flash firmware 
-and do all the other stuff utilizing platformio (*pio*) and clion on your Linux Distribution installation.
+and do all the other stuff utilizing platformio (*pio*) and
+clion on your Linux Distribution installation.
 Now, I am going to discuss how to use the
-ESP32 [JTAG interface](https://en.wikipedia.org/wiki/JTAG) (*usb*)
-along with clion ide's advanced debugging features.
+ESP32-S3 builtin [JTAG interface](https://en.wikipedia.org/wiki/JTAG) (*usb*)
+along with clion IDE's advanced debugging features.
 
 1. First, make sure that you have correctly configured
    `platformio.ini` file. For reference check the provided [platformio.ini](platformio.ini).
