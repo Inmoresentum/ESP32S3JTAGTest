@@ -1,4 +1,4 @@
-<h1 align="center">Procedure to use builtin jtag interface with pio and clion on Linux</h1>
+<h1 align="center">Procedure to use builtin jtag interface with pio/platformio and clion on Linux</h1>
 
 Here I assume that you have already setup [pio](https://platformio.org/)
 and [clion](https://www.jetbrains.com/clion/) correctly and can flash firmware 
